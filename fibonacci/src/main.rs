@@ -20,9 +20,9 @@ fn fibonacci(n: u32) -> u32 {
     let mut fib_n = 1;      // F(n)      
     
     for _i in 1..n {        
-        let new = fib_n + fib_n_1; // F(n + 1)
+        let next = fib_n + fib_n_1; // F(n + 1)
         fib_n_1 = fib_n;
-        fib_n = new;
+        fib_n = next;
     }
     
     fib_n
